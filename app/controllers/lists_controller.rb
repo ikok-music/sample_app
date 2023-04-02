@@ -4,7 +4,6 @@ class ListsController < ApplicationController
     @list = List.new
   end
 
-   # 以下を追加
   def create
     @list = List.new(list_params)
     if @list.save
